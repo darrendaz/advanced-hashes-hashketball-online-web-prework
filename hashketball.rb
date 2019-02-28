@@ -183,9 +183,8 @@ def big_shoe_rebounds
   
   game_hash[:home][:players].each{|player, stats|
     if stats[:shoe] > bigShoe
-      player[:rebounds] = stats[:rebounds]
+      player = {:rebounds => stats[:rebounds]}
       bigShoe = stats[:shoe]
-      binding.pry
     end
   }
   
