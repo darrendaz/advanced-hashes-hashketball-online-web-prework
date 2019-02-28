@@ -185,8 +185,11 @@ def big_shoe_rebounds
     if stats[:shoe] > bigShoe
       player = {:rebounds => stats[:rebounds]}
       bigShoe = stats[:shoe]
+      binding.pry
     end
+    binding.pry
   }
+  binding.pry
   
   player[:rebounds]
 end
