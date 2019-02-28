@@ -178,7 +178,7 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
-  player = {}
+  player = {:rebounds => 0}
   bigShoe = 0
   
   game_hash[:home][:players].each{|player, stats|
